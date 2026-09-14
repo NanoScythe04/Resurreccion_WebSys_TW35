@@ -19,6 +19,7 @@
     <table border="1" cellpadding="10">
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Full Name</th>
                 <th>Email</th>
                 <th>Phone</th>
@@ -28,6 +29,7 @@
         <tbody>
             <?php foreach ($customers as $customer): ?>
                 <tr>
+                    <td><?= esc($customer['id']) ?></td>
                     <td><?= esc($customer['full_name']) ?></td>
                     <td><?= esc($customer['email']) ?></td>
                     <td><?= esc($customer['phone']) ?></td>
